@@ -1026,13 +1026,12 @@ textarea::placeholder{
     font-weight: 600;
     padding: 10px 0;
 }
+.testimonial .image img{
+    max-width: 90px;
+}
 .testimonial .clint p{
     font-size: 17px;
     line-height: 1.5;
-}
-.testimonial .clint span{
-    border-top: 5px solid var(--main-color);
-    padding-bottom: 20px;
 }
 .testimonial .clint h3{
    color: #182333;
@@ -1045,18 +1044,26 @@ textarea::placeholder{
     font-size: 20px;
     padding: 20px 0;
 }
-.testimonial .clint .icon{
-    margin-top: 30px;
+.testimonial .owl-theme .owl-dots .owl-dot span{
+    display: none;
 }
-.testimonial .clint .icon a{
-    border-radius: 100px;
+.testimonial .owl-carousel .owl-nav button {
+    color: #182333;
     border: 2px solid var(--main-color);
-    padding: 10px 15px;
+    position: relative;
+    right: 42%;
+    width: 45px;
+    height: 45px;
+    border-radius: 50px;
     transition: var(--main-transition);
 }
-.testimonial .clint .icon a:hover{
-    color: #fff;
+.testimonial .owl-carousel .owl-nav button:hover{
     background-color: var(--main-color);
+}
+@media (max-width:767px){
+    .testimonial .owl-carousel .owl-nav button {
+        right: 38%;
+    }
 }
 /* End Testimonial */
 /* Start Footer */

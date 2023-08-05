@@ -41,31 +41,34 @@
     </section>
     <!-- End Info -->
     <!-- Start Header -->
-    <header class="header" id="header">
+    <header class="navbar">
         <div class="container">
-           <div class="nav">
+            <div class="nav">
                 <div class="logo">
                     <a href="#"><i class="fa-solid fa-building"></i> Apex</a>
                 </div>
-                <ul class="links">
-                    <li><a href="#" class="active">Home</a></li>
-                    <li><a href="#">About Us</a></li>
-                    <li><a href="#">Our Services</a></li>
-                    <li><a href="#">Pages <i class="fa-solid fa-chevron-down"></i>
-                        <div class="drop">
-                            <ul class="link">
-                                <li><a href="#">Features</a></li>
-                                <li><a href="#">Appointment</a></li>
-                                <li><a href="#">Out Team</a></li>
-                                <li><a href="#">Testimonial</a></li>
-                                <li><a href="#">404 Page</a></li>
-                            </ul>
-                        </div>
-                    </a></li>
-                    <li><a href="#">Contact Us</a></li>
-                </ul>
-           </div>
-        </div>
+                <button class="mobile" aria-controls="primary" aria-expanded="false"><span class="sr-only">Menu</span></button>
+                <nav class="primary" id="primary" data-visible="false">
+                    <ul class="links">
+                        <li><a href="#" class="active"><span aria-hidden="true"></span>Home</a></li>
+                        <li><a href="#"><span aria-hidden="true"></span>About Us</a></li>
+                        <li><a href="#"><span aria-hidden="true"></span>Our Services</a></li>
+                        <li><a href="#"><span aria-hidden="true"></span>Pages <i class="fa-solid fa-chevron-down"></i>
+                            <div class="drop">
+                                <ul class="link">
+                                    <li><a href="#" >Features</a></li>
+                                    <li><a href="#">Appointment</a></li>
+                                    <li><a href="#">Out Team</a></li>
+                                    <li><a href="#">Testimonial</a></li>
+                                    <li><a href="#">404 Page</a></li>
+                                </ul>
+                            </div>
+                        </a></li>
+                        <li><a href="#">Contact Us</a></li>
+                    </ul>
+                </nav>
+            </div>
+         </div>
     </header>
     <!-- End Header -->
     <!-- Start Landing -->

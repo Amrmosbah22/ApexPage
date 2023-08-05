@@ -1,3 +1,19 @@
+// nav
+const primaryNav = document.querySelector('.primary');
+const mobile = document.querySelector('.mobile');
+
+mobile.addEventListener('click', ()=>{
+    const visibility = primaryNav.getAttribute('data-visible')
+
+    if(visibility === "false"){
+        primaryNav.setAttribute('data-visible', true);
+        mobile.setAttribute('aria-expanded', true);
+    }else if(visibility === "true"){
+        primaryNav.setAttribute('data-visible', false);
+        mobile.setAttribute('aria-expanded', false);
+    }
+});
+// scroll
 $('#owl-carousel2').owlCarousel({
     autoPlay:true,
     autoplaySpeed:1000,

@@ -48,6 +48,11 @@ ul{
         width: 1200px;
     }
 }
+@media (max-width:35em){
+    .home{
+        display: none;
+    }
+}
 /* Start Info */
 .info{
     background-color: #dbd9d93f;
@@ -355,7 +360,8 @@ ul{
 }
 @media (max-width:767px) {
     .landing .text .txt a{
-        font-size: 15px;
+        font-size: 12px;
+        padding-right: 25px;
     }
 }
 .landing .text .txt a:not(:first-child)::before{
@@ -405,7 +411,7 @@ ul{
 .about .image img{
     width: 30em;
 }
-@media (max-width:767px) {
+@media (max-width:767px){
     .about .image img{
         width: 100%;
     }
@@ -428,6 +434,11 @@ ul{
     border: 20px solid #fff;
     left: -1.5em;
     top: -1em;
+}
+@media (max-width:767px){
+    .about .image .overlay{
+        left: -0.7em;
+    }
 }
 .about .image .overlay span{
     font-size: 20px;
@@ -608,6 +619,11 @@ ul{
     border: 20px solid #fff;
     left: -1.5em;
     top: -1em;
+}
+@media (max-width:767px){
+    .features .image .overlay{
+        left: -0.7em;
+    }
 }
 .features .image .overlay span{
     font-size: 20px;

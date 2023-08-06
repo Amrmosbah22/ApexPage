@@ -13,7 +13,28 @@ mobile.addEventListener('click', ()=>{
         mobile.setAttribute('aria-expanded', false);
     }
 });
-// scroll
+// Scroll Landing
+$('#owl-carousel').owlCarousel({
+    autoPlay:true,
+    autoplaySpeed:1000,
+    loop:true,
+    margin:10,
+    nav:true,
+    navText:[ `<i class="fa-solid fa-angle-left"></i>` ,
+    `<i class="fa-solid fa-chevron-right"></i>`],
+    responsive:{
+        0:{
+            items:1
+        },
+        600:{
+            items:1
+        },
+        1000:{
+            items:1
+        }
+    }
+})
+// scroll Tesimonial
 $('#owl-carousel2').owlCarousel({
     autoPlay:true,
     autoplaySpeed:1000,

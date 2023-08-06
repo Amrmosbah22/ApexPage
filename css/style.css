@@ -1294,3 +1294,205 @@ textarea::placeholder{
     font-size: 20px;
 }
 /* End Home */
+/* Second Page About */
+/* Start BoxLink */
+.mainbox{
+    background: linear-gradient(rgba(0, 0, 0, 0.61),rgba(0, 0, 0, 0.692)), url(../img/carousel-1.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.mainbox h2{
+    color: #fff;
+    font-size: 60px;
+    margin-bottom: 30px;
+}
+.mainbox .links a{
+    color: #fff;
+}
+.mainbox .links .active{
+    color: var(--main-color);
+}
+/* End BoxLink */
+/* Start Engineer */
+.engineer{
+    padding-top: var(--main-padding-top);
+    padding-bottom: var(--main-padding-bottom);
+}
+.engineer .container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+@media (max-width:767px){
+    .engineer .container{
+        flex-direction: column;
+    }
+}
+@media screen and (min-width:768px) and (max-width:1023px){
+    .engineer .container{
+        flex-direction: column;
+        gap: 40px;
+    }
+}
+.engineer .box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+@media (max-width:767px){
+    .engineer .box{
+        flex-direction: column;
+    }
+}
+.engineer .box img{
+    max-width: 100%;
+}
+.engineer .box .text{
+    margin-left: 25px;
+}
+@media (max-width:767px){
+    .engineer .box .text{
+        margin: 15px 0;
+    }
+}
+.engineer .box .text h2{
+    color: #182333;
+    font-size: 27px;
+    font-weight: 600;
+}
+.engineer .box .text h3{
+    color: #8D9297;
+    font-size: 16px;
+    font-weight: 400;
+    padding-top: 5px;
+    padding-bottom: 20px;
+}
+.engineer .box .text h4{
+    color: #182333;
+    font-weight: 600;
+}
+.engineer .box .text p{
+    color: #8D9297;
+    padding: 10px 0;
+}
+/* end Enginee */
+/* Start Map */
+.map{
+    padding-bottom: var(--main-padding-bottom);
+}
+.map .container{
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    gap: 50px;
+}
+@media (max-width:767px){
+    .map .container{
+        flex-direction: column;
+    }
+}
+@media screen and (min-width:768px) and (max-width:1023px){
+    .map .container{
+        flex-direction: column;
+    }
+}
+.map .box iframe{
+    height: 37em;
+}
+@media (max-width:767px){
+    .map .box iframe{
+        width: 93vw;
+    }
+}
+@media screen and (min-width:768px) and (max-width:1023px){
+    .map .box iframe{
+        width: 90vw;
+    }
+}
+.map .box .main-text{
+    border-left: 5px solid var(--main-color);
+    padding-left: 20px;
+}
+.map .main-text .txt h2{
+    color: #8D9297;
+    font-size: 17px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+.map .main-text .txt p{
+    color: #182333;
+    font-size: 40px;
+    font-weight: 700;
+    margin-bottom: 40px;
+}
+@media (max-width:767px){
+    .map .main-text .txt p{
+        font-size: 35px;
+    }
+}
+.map .box p{
+    color: #8D9297;
+    line-height: 1.4;
+}
+.map .box p span{
+    color: var(--main-color);
+    transition: var(--main-transition);
+}
+.map .box p span a:hover{
+    color: #ca8122;
+}
+.map .box form{
+    margin-top: 40px;
+}
+.map .box .storge{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+.map .box input{
+    width: 100%;
+    padding: 15px;
+    margin: 10px 0;
+    outline: none;
+    border: none;
+    background-color: #F8F9FA;
+}
+.map .box textarea{
+    background-color:  #F8F9FA;
+    margin: 10px 0;
+    resize: none;
+}
+.map .box input[type="submit"]{
+    width: 30%;
+    padding: 20px 0;
+    color: #fff;
+    background-color: var(--main-color);
+    cursor: pointer;
+    transition: var(--main-transition);
+}
+@media (max-width:767px){
+    .map .box input[type="submit"]{
+        width: 50%;
+    }
+}
+.map .box input[type="submit"]:hover{
+    background-color: #d19e5c;
+}
+.map input::placeholder{
+    color: #8D9297;
+}
+.map form input:focus::placeholder,
+.map form textarea:focus::placeholder{
+    position: absolute;
+    top: 1%;
+    font-size: 11px;
+}
+.map input:focus ,textarea:focus{
+    box-shadow: 0 0 0 .25rem rgba(253,161,43,0.25);
+}
+/* End Map */
